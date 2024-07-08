@@ -1,6 +1,3 @@
-import React from "react";
-import TECH from "../Img/tech.png";
-
 const KnowMe = () => {
   return (
     <div className=" my-10">
@@ -25,7 +22,7 @@ const KnowMe = () => {
             <p className="faint inter">
               The dev tools, apps, devices, and games I use and play.
             </p>
-            <img className="h-48 mx-auto" src={TECH} alt="tech" />
+            <img className="h-48 mx-auto" src={""} alt="tech" />
           </a>
         </div>
       </div>

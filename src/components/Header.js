@@ -1,5 +1,4 @@
 import React from "react";
-import LOGO from "../Img/logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {

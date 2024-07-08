@@ -1,5 +1,4 @@
-import MOVIES from "../Img/MoviesGhar.png";
-import LUNCH from "../Img/LunchBox.png";
+
 
 export const works = [
   {
@@ -19,7 +18,7 @@ export const works = [
     uuid: 20,
     description:
       "MoviesGHAR is the powerful web application designed to help you stay updated with the upcoming movies. with an interactive interface, you have to log in to access the content so that no one can spam onto the website you can access it onto the multiple devices",
-    image: MOVIES,
+    image: "https://firebasestorage.googleapis.com/v0/b/portfolio-269ba.appspot.com/o/ProjectsPhoto%2FMoviesGhar.png?alt=media&token=8d8af7fd-d541-410a-bef7-56ab822384f9",
     websiteLink: "https://moviesghar.web.app/",
     _id: "BW0jAAeDJmlZCF8i",
   },
@@ -28,7 +27,7 @@ export const works = [
     uuid: 30,
     description:
       "LunchBox is the powerful web application designed to help you get the best food in the city without going out to the restronent. with an interactive interface, It updates the real time data according to the avaliblity of the food and the updated cost for the food",
-    image: LUNCH,
+    image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-269ba.appspot.com/o/ProjectsPhoto%2FLunchBox.png?alt=media&token=3d52c5d8-caeb-47d5-8deb-299325b1db9a',
     websiteLink: "https://lunchboxx.netlify.app/",
     _id: "BW0jAAeDJmlZCF8i",
   },
