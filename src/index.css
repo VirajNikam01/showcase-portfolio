@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.ttf");
+  }
+  
+@font-face {
+  font-family: "InterExtraBold";
+  src: url("./fonts/Inter-ExtraBold.ttf");
+  }
+  @font-face {
+    font-family: "InterSemiBold";
+    src: url("./fonts/Inter-SemiBold.ttf");
+    }
+  
+
+body{
+  background-color: #0D0D0D;
+  color: white;
+}
+.logo{
+  filter: contrast(0%); 
+}
+.faint{
+  color: #71717A;
+}
+.inter{
+  font-family: "Inter";
+}
+.semibold{
+  font-family: "InterSemiBold";
+}
+.extrabold{
+  font-family: "InterExtraBold";
+}
+
+@media (min-width:1024px) {
+  .app{
+    margin-inline: auto;
+    width: 55%;
+    max-width: 1650px;
+  }
+}
