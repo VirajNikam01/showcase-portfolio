@@ -2,46 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: "Inter";
   src: url("./fonts/Inter-Regular.ttf");
-  }
-  
+}
+
 @font-face {
   font-family: "InterExtraBold";
   src: url("./fonts/Inter-ExtraBold.ttf");
-  }
-  @font-face {
-    font-family: "InterSemiBold";
-    src: url("./fonts/Inter-SemiBold.ttf");
-    }
-  
+}
+@font-face {
+  font-family: "InterSemiBold";
+  src: url("./fonts/Inter-SemiBold.ttf");
+}
 
-body{
-  background-color: #0D0D0D;
+body {
+  background-color: #0d0d0d;
   color: white;
 }
-.logo{
-  filter: contrast(0%); 
+.logo {
+  filter: contrast(0%);
 }
-.faint{
-  color: #71717A;
+.faint {
+  color: #71717a;
 }
-.inter{
+.inter {
   font-family: "Inter";
 }
-.semibold{
+.semibold {
   font-family: "InterSemiBold";
 }
-.extrabold{
+.extrabold {
   font-family: "InterExtraBold";
 }
 
-@media (min-width:1024px) {
-  .app{
+@media (min-width: 1024px) {
+  .app {
     margin-inline: auto;
     width: 55%;
     max-width: 1650px;
   }
+}
+
+/* Projects Details Page */
+.titleBefore {
+  position: relative;
+}
+.titleBefore::before {
+  content: "⭐";
+  position: absolute;
+  left: -10%;
+  top: -2%;
 }
