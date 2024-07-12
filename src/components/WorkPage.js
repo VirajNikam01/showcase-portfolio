@@ -4,6 +4,8 @@ import { works } from "../utils/workData";
 
 const WorkPage = () => {
     console.log(works);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   return (
     <div className="text-white my-10">
       <h1 className="extrabold text-3xl sm:text-5xl my-3 sm:my-8">Selected Work</h1>

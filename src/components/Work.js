@@ -10,9 +10,13 @@ const Work = ({ work, index }) => {
   return (
     <Link
       to={"/details/" + uuid}
-      className="border border-gray-500 overflow-hidden hover:scale-105 active:scale-100 duration-300 cursor-pointer rounded-xl mb-10"
+      className="border inline-block duration-300  rounded-xl mb-10"
     >
-      <img className="rounded-lg sm:p-5" src={images[0]} alt="img" />
+      <img
+        className="rounded-lg overflow-hidden hover:scale-95 duration-500 sm:p-5"
+        src={images[0]}
+        alt="img"
+      />
       <div className="p-5">
         <h1 className="extrabold text-2xl py-3">{name}</h1>
         <p className="faint inter">{description}</p>

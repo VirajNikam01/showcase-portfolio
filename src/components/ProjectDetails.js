@@ -6,6 +6,7 @@ import Footer from "./Footer";
 
 const ProjectDetails = () => {
   const { index } = useParams();
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 
   const data = works.filter((project) => {
     return project.uuid === Number(index);
@@ -28,7 +29,7 @@ const ProjectDetails = () => {
         <h1 className="text-2xl font-semibold titleBefore mt-4">{name}</h1>
         {images.map((image, index) => {
           return (
-            <div>
+            <div className="rounded-xl overflow-hidden">
               <img src={image} alt="" />
             </div>
           );

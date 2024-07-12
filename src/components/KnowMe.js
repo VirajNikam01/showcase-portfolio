@@ -22,7 +22,13 @@ const KnowMe = () => {
             <p className="faint inter">
               The dev tools, apps, devices, and games I use and play.
             </p>
-            <img className="h-48 mx-auto" src={""} alt="tech" />
+            <img
+              className="h-48 mx-auto ml-24"
+              src={
+                "https://firebasestorage.googleapis.com/v0/b/portfolio-269ba.appspot.com/o/Tech%2FTechstack.png?alt=media&token=eefd1a79-9d1c-4d43-a126-0eb5d7c235f5"
+              }
+              alt="tech"
+            />
           </a>
         </div>
       </div>

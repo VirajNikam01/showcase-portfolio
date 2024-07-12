@@ -5,9 +5,11 @@ import { tech } from "../utils/techData";
 import TechCard from "./TechCard";
 
 const TechStack = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   return (
     <div>
-        <Header />
+      <Header />
       <div className="">
         <div className="mt-10">
           <h1 className="extrabold text-4xl sm:text-6xl">My Tech Stack</h1>
@@ -24,7 +26,7 @@ const TechStack = () => {
           </div>
         </div>
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 };
