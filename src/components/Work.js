@@ -3,25 +3,36 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Work = ({ work, index }) => {
-  const { name, description, images, websiteLink, uuid } = work;
+  const { name, description, images, websiteLink, uuid, status } = work;
 
   const navigate = useNavigate();
 
   return (
-    <Link
-      to={"/details/" + uuid}
-      className="border inline-block duration-300  rounded-xl mb-10"
-    >
-      <img
-        className="rounded-lg overflow-hidden hover:scale-95 duration-500 sm:p-5"
-        src={images[0]}
-        alt="img"
-      />
-      <div className="p-5">
-        <h1 className="extrabold text-2xl py-3">{name}</h1>
-        <p className="faint inter">{description}</p>
-      </div>
-    </Link>
+    <div>
+      <Link
+        to={"/details/" + uuid}
+        className="border-2 inline-block hover:border-red-600 duration-300  rounded-xl mb-1 overflow-hidden"
+      >
+        <img
+          className="rounded-lg overflow-hidden duration-500 "
+          src={images[0]}
+          alt="img"
+        />
+        <div className="p-5">
+          <h1 className="extrabold text-xl py-3">
+            {name}{" "}
+            <span
+              className={`${
+                status === "In Progress" ? "text-orange-500" : "text-green-800"
+              } ml-3 text-sm font-extralight`}
+            >
+              ›{status}
+            </span>
+          </h1>
+          <p className="faint inter">{description.substring(0, 150)} <span className="hover:text-green-600 text-blue-600">read more...</span></p>
+        </div>
+      </Link>
+    </div>
   );
 };
 

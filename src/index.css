@@ -51,6 +51,6 @@ body {
 .titleBefore::before {
   content: "⭐";
   position: absolute;
-  left: -10%;
+  left: -20%;
   top: -2%;
 }

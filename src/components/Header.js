@@ -6,9 +6,7 @@ const Header = () => {
     <div className="flex justify-between items-center py-6">
       <div className="flex items-center justify-between sm:justify-start w-full">
         <Link to={"/"}>
-          <h1 className="font-bold text-gray-300">
-            Viraj Nikam <span className="text-red-200">.</span>
-          </h1>
+          <h1 className="font-bold text-xl text-teal-300">Viraj.n</h1>
         </Link>
         <ul className="flex semibold items-center gap-4 text-gray-300 sm:gap-8 sm:mx-6 ">
           <Link to={"/about"}>

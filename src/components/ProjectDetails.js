@@ -19,6 +19,7 @@ const ProjectDetails = () => {
     websiteLink,
     images,
     technologies,
+    sourceCode,
   } = data[0];
 
   return (
@@ -42,13 +43,23 @@ const ProjectDetails = () => {
             })}
           </div>
         </div>
-        <div className="links mt-3">
-          <a
-            className="px-5 py-2 border rounded-xl bg-transparent hover:bg-zinc-900 duration-500"
-            href={websiteLink}
-          >
-            View Live
-          </a>
+        <div className="links mt-3 flex gap-5">
+          {websiteLink && (
+            <a
+              className="px-5 py-2 border rounded-xl bg-transparent hover:bg-zinc-900 duration-500"
+              href={websiteLink}
+            >
+              View Live
+            </a>
+          )}
+          {sourceCode && (
+            <a
+              className="px-5 py-2 border rounded-xl bg-transparent hover:bg-zinc-900 duration-500"
+              href={sourceCode}
+            >
+              View Code
+            </a>
+          )}
         </div>
         <div className="desc">
           <p className="text-center">{description}</p>
